@@ -40,7 +40,8 @@ return {
 
   -- Disable some useless plugins
   { "goolord/alpha-nvim", enabled = false },
-  { "akinsho/bufferline.nvim", enabled = false },
+  -- { "akinsho/bufferline.nvim", enabled = false },
+  { "akinsho/toggleterm.nvim", enabled = false },
   { "echasnovski/mini.ai", enabled = false },
   { "folke/persistence.nvim", enabled = false },
   { "SmiteshP/nvim-navic", enabled = false },
@@ -140,5 +141,6 @@ return {
         "stylua",
       },
     },
-  }
+  },
+  { "wakatime/vim-wakatime"}
 }

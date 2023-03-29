@@ -22,6 +22,24 @@ vim.keymap.set("n", "<leader>Y", '"+Y')
 vim.keymap.set("n", "<leader>d", '"_d')
 vim.keymap.set("v", "<leader>d", '"_d')
 
+vim.keymap.set("n", "<leader><Left>", ":BufferLineCyclePrev<cr>")
+vim.keymap.set("n", "<leader><Right>", ":BufferLineCycleNext<cr>")
+vim.keymap.set("n", "<C-S-PageUp>", ":BufferLineCyclePrev<cr>")
+vim.keymap.set("n", "<C-S-PageDown>", ":BufferLineCycleNext<cr>")
+vim.keymap.set("n", "<leader><Up>", ":tabnew<cr>")
+vim.keymap.set("n", "<C-S-t>", ":tabnew<cr>")
+vim.keymap.set("n", "<leader><Down>", ":bp <BAR> bd #<CR>")
+
+vim.keymap.set("n", "<leader>g", ":Gitsigns preview_hunk<CR>")
+vim.keymap.set("n", "<leader>gg", ":Gitsigns reset_hunk<CR>")
+
+vim.keymap.set("n", "<C-Left>", "b")
+vim.keymap.set("n", "<C-Right>", "e")
+vim.keymap.set("v", "<C-Left>", "b")
+vim.keymap.set("v", "<C-Right>", "e")
+
+-- vim.keymap.set("n", "<C-:>", "gcc")
+
 -- Harpoon plugin keymaps
 local mark = require("harpoon.mark")
 local ui = require("harpoon.ui")
