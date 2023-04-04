@@ -4,6 +4,7 @@ return {
   { "wellle/targets.vim" },
   { "windwp/nvim-ts-autotag" },
   { "tpope/vim-surround" },
+  { "prettier/vim-prettier" },
   {
     "akinsho/toggleterm.nvim",
     version = "*",

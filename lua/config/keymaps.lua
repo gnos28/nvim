@@ -38,7 +38,16 @@ vim.keymap.set("n", "<C-Right>", "e")
 vim.keymap.set("v", "<C-Left>", "b")
 vim.keymap.set("v", "<C-Right>", "e")
 
--- vim.keymap.set("n", "<C-:>", "gcc")
+vim.keymap.set("n", "<M-S-f>", ":Prettier<CR>")
+vim.keymap.set("n", "<Tab>", ":MinimapToggle<CR>")
+
+vim.keymap.set("v", "<S-Up>", "k")
+vim.keymap.set("v", "<S-Down>", "j")
+
+vim.keymap.set("n", "<C-k>", "<C-]>")
+vim.keymap.set("n", "<leader>f", ":lua require'telescope.builtin'.live_grep{}<cr>")
+
+vim.keymap.set("n", "<M-z>", ":set wrap!<CR>")
 
 -- Harpoon plugin keymaps
 local mark = require("harpoon.mark")

@@ -2,11 +2,56 @@
 
 Simple NVim config using LazyVim.
 
+You need install a nerd font : [Nerd Fonts](https://www.nerdfonts.com/)
+
+## Personal keymaps
+
+- Leader u : Open Undotree
+- J (in visual mode) : move selection down
+- K (in visual mode) : move selection up
+- Y : Yank from cursor to end of line
+- Leader d : Delete the selection/object in the black hole register
+- Leader p : Delete the selection/object in the black hole register then paste
+- Leader y (or Y) : Yank in system clipboard
+
+## LSP keymaps
+
+- Leader cd : Line diagnostics
+- Leader cl : LSP Info
+- Leader cf : Format Document
+- Leader cf (visual mode) : Format Range
+- Leader ca : Code Action
+- Leader cA : Source Action
+- Leader cr : Rename
+- Ctrl + k : Signature Help
+- gd : Goto definition
+- gr : References
+- gD : Goto Declaration
+- gI : Goto Implementation
+- gt : Goto Type Definition
+- K : Hover
+- gK : Signature Help
+- ]d : Next Diagnostic
+- [d : Previous Diagnostic
+- ]e : Next Error
+- [e : Previous Error
+- ]w : Next Warning
+- [w : Previous Warning
+
+### Harpoon personal shortcuts
+
+- Leader a : Add file to harpoon
+- Ctrl + e : toggle the files list
+- Leader hh : Go to the first file
+- Leader jj : Go to the second file
+- Leader kk : Go to the third file
+- Leader ll : Go to the fourth file
+
 ## Plugins
 
 - [LazyVim](https://github.com/LazyVim/LazyVim)
   - Base of this config
-    - Leader + l : Open lazy-vim manager
+    - Leader l : Open lazy-vim manager
     - Ctrl + h : Go to left window
     - Ctrl + j : Go to lower window
     - Ctrl + k : Go to upper window
@@ -21,11 +66,6 @@ Simple NVim config using LazyVim.
     - Leader | : Split window right
 - [Harpoon](https://github.com/theprimeagen/harpoon)
   - Jump blazingly fast over files:
-    - Ctrl + e : toggle the files list
-    - Leader + hh : Go to the first file
-    - Leader + jj : Go to the second file
-    - Leader + kk : Go to the third file
-    - Leader + ll : Go to the fourth file
 - [lualine](https://github.com/nvim-lualine/lualine.nvim)
   - Status line
 - [Mason](https://github.com/williamboman/mason.nvim)
@@ -119,10 +159,14 @@ Simple NVim config using LazyVim.
     - Leader ss : Goto symbol
 - [todo-comments.nvim](https://github.com/folke/todo-comments.nvim)
   - Highlight and search for todo comments like TODO, FIX etc...
+    - ]t : Next todo comment
+    - [t : Previous todo comment
+    - Leader xt : Todo (Trouble)
+    - Leader xT : Todo/Fix/Fixme (Trouble)
+    - Leader st : Todo
 - [trouble.nvim](https://github.com/folke/trouble.nvim)
   - List diagnostics, references, telescope results, quickfix and location lists
     - Leader xx : Document diagnostics
-    - Leader xX : Workspace diagnostics
     - Leader xL : Location list
     - leader xQ : Quickfix list
     - [q : previous trouble/quickfix item
